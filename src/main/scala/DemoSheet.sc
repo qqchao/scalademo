@@ -32,10 +32,18 @@ object DemoSheet{
     if(s.length>3)
   )println(s)
 
-  for (
-    s <- l
+  var s1 = "12"
 
-  )yield()
+  for {
+    s <- l
+    s1 = s.toUpperCase()
+    if(s1 != "")
+  }yield(s1)
+
+  for(s <- l) {
+
+    println(s)
+  }
 
   val f:Float = 8.5f
 
