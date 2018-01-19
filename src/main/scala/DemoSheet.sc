@@ -92,4 +92,15 @@ object DemoSheet{
   addOperate(7, decode)
 
   def hello() = (name:String) => {"hello " + name}
+
+  def printUpperCase(s:String) : String = {
+    s.toUpperCase
+  }
+
+  def listToUpper(f : String => String) = {
+    for(s <- l)println(f(s))
+  }
+
+  listToUpper(printUpperCase)
+
 }
